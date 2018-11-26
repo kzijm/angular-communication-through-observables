@@ -1,0 +1,14 @@
+<div style="width: 200px; background-color: rgb(214, 214, 214); padding: 10px 30px; border: 1px solid black; margin-bottom: 20px;">
+
+  <h4>Ontvangen messages</h4>
+  <div *ngIf="message" class="alert alert-success">{{message.text}}</div>
+
+  <app-modal id="pick-modal-value">
+      <app-send-communication></app-send-communication>
+  </app-modal>
+
+  <button class="cms-button" (click)="launchPicker()">
+    <span>pick modal value</span>
+  </button>
+
+</div>
